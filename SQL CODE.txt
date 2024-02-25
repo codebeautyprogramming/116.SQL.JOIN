@@ -1,0 +1,12 @@
+select * from RecipeTypes
+
+insert into Recipes (Name, Description, RecipeTypeId)
+values 
+('Garlic cheeze pasta', 'Creamy pasta ready in 10 minutes', 3),
+('Green salad', 'Crispy flatbread pieces served with mixed greens, red peppers, feta cheese, olives...', 1),
+('Vanilla cake', 'Bake until golden, decorate with vanilla cream', 4)
+
+select * from Recipes
+
+delete from RecipeTypes
+where Name = 'Cake'
